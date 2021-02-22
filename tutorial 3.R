@@ -1,0 +1,15 @@
+install.packages("spatstat")
+install.packages("spatstat.data")
+install.packages("rgdal")
+install.packages("maptools")
+install.packages("mapdata")
+install.packages("rgeos")
+
+library(spatstat.data)
+library(rgdal)
+library(maptools)
+library(mapdata)
+library(rgeos)
+
+Wales <- readOGR("Layer #0.shp", layer = "Layer #0")
+spatstat.options(checkpolygons = F)
